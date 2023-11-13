@@ -1,42 +1,76 @@
+.puppies-container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.puppies-container > li {
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.puppies-container > li > img {
+    max-width: 200px;
+}
+
+.details {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.single-puppy {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-puppy img {
+    width: 100%;
+    border-radius: 4%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.deleteBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 4%;
+    margin: 5px;
+}
+
+nav > a {
+    margin: 25px;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+label {
+    margin: 5px;
+    font-size: 20px;
+    
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+#formInput {
+    width: 200px;
+    height: 25px;
 }
